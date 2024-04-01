@@ -133,12 +133,12 @@ class HBNBCommand(cmd.Cmd):
         if value.find('.') != -1:
             try:
                 value = float(value)
-            Except:
+            except:
                 pass
         else:
             try:
                 value = int(value)
-            Except:
+            except:
                 pass
         return value
 
@@ -363,3 +363,4 @@ class HBNBCommand(cmd.Cmd):
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
+    
