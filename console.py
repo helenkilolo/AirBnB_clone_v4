@@ -133,12 +133,12 @@ class HBNBCommand(cmd.Cmd):
         if value.find('.') != -1:
             try:
                 value = float(value)
-            except:
+            Except:
                 pass
         else:
             try:
                 value = int(value)
-            except:
+            Except:
                 pass
         return value
 
